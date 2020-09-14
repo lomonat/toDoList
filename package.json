@@ -2,21 +2,37 @@
   "name": "vue-todo-list",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@firebase/firestore": "^1.16.7",
+    "axios": "^0.20.0",
+    "babel-node": "0.0.1-security",
+    "body-parser": "^1.19.0",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "es6-promise": "^4.2.8",
+    "express": "^4.17.1",
+    "faker": "^5.1.0",
+    "firebase": "^7.20.0",
+    "joi": "^17.2.1",
+    "mongoose": "^5.10.4",
+    "monk": "^7.3.2",
+    "vue": "^2.6.11",
+    "vue-material": "^1.0.0-beta-15",
+    "vuex": "^3.5.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.0",
-    "@vue/cli-plugin-eslint": "^4.5.0",
+    "@vue/cli-plugin-eslint": "^4.5.4",
     "@vue/cli-service": "^4.5.0",
+    "@vue/eslint-config-airbnb": "^5.0.2",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
+    "eslint": "5",
+    "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
     "vue-template-compiler": "^2.6.11"
   },
@@ -27,7 +43,8 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "eslint:recommended"
+      "eslint:recommended",
+      "@vue/airbnb"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
